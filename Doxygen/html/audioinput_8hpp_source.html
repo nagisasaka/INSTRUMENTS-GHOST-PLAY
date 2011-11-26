@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Ghost Play: C:/Documents and Settings/Administrator/My Documents/Visual Studio 2008/Projects/GhostCore/GhostCore/audio/audioinput.hpp ソースファイル</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Ghost Play
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 作成： Doxygen 1.7.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('audioinput_8hpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/Documents and Settings/Administrator/My Documents/Visual Studio 2008/Projects/GhostCore/GhostCore/audio/audioinput.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="audioinput_8hpp.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef AUDIOINPUT_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define AUDIOINPUT_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QPixmap&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;QWidget&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;QObject&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;QMainWindow&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;QPushButton&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;QComboBox&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;QByteArray&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;QAudioInput&gt;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 
+<a name="l00018"></a>00018 <span class="keyword">class </span><a class="code" href="class_audio_info.html">AudioInfo</a> : <span class="keyword">public</span> QIODevice
+<a name="l00019"></a>00019 {
+<a name="l00020"></a>00020     Q_OBJECT
+<a name="l00021"></a>00021 <span class="keyword">public</span>:
+<a name="l00022"></a>00022     <a class="code" href="class_audio_info.html#a38af9b97c291fb0ca043b497f2e9a52f">AudioInfo</a>(<span class="keyword">const</span> QAudioFormat &amp;format, QObject *parent);
+<a name="l00023"></a>00023     <a class="code" href="class_audio_info.html#ae6b316306b98617ceda7624bb04138fd">~AudioInfo</a>();
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025     <span class="keywordtype">void</span> <a class="code" href="class_audio_info.html#a3c39e274bab04bdbd610e0bc03ad5db1">start</a>();
+<a name="l00026"></a>00026     <span class="keywordtype">void</span> <a class="code" href="class_audio_info.html#a24be66ee2d6869d06e343b1eae51e07e">stop</a>();
+<a name="l00027"></a>00027 
+<a name="l00028"></a><a class="code" href="class_audio_info.html#a3f742fb790ca73de991b68aa930ca3c8">00028</a>     qreal <a class="code" href="class_audio_info.html#a3f742fb790ca73de991b68aa930ca3c8">level</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_level; }
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030     qint64 <a class="code" href="class_audio_info.html#a849c1a1d85830c81d33fc3157a0e730d">readData</a>(<span class="keywordtype">char</span> *data, qint64 maxlen);
+<a name="l00031"></a>00031     qint64 <a class="code" href="class_audio_info.html#a976574d79ff06293430263ef298f8458">writeData</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *data, qint64 len);
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="keyword">private</span>:
+<a name="l00034"></a>00034     <span class="keyword">const</span> QAudioFormat m_format;
+<a name="l00035"></a>00035     quint16 m_maxAmplitude;
+<a name="l00036"></a>00036     qreal m_level; <span class="comment">// 0.0 &lt;= m_level &lt;= 1.0</span>
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 signals:
+<a name="l00039"></a>00039     <span class="keywordtype">void</span> <a class="code" href="class_audio_info.html#ac34dcfd4324a0d169c1007e0ef9c0dee">update</a>();
+<a name="l00040"></a>00040 };
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 
+<a name="l00047"></a>00047  <span class="keyword">class </span><a class="code" href="class_render_area.html">RenderArea</a> : <span class="keyword">public</span> QWidget
+<a name="l00048"></a>00048  {
+<a name="l00049"></a>00049      Q_OBJECT
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051  <span class="keyword">public</span>:
+<a name="l00052"></a>00052      <a class="code" href="class_render_area.html#a2e337a64fb1f619e6c63832bd1027f99">RenderArea</a>(QWidget *parent = 0);
+<a name="l00053"></a>00053      <span class="keywordtype">void</span> <a class="code" href="class_render_area.html#a51b47a06e703c3d84ce984bdec744805">setLevel</a>(qreal value);
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055  <span class="keyword">protected</span>:
+<a name="l00056"></a>00056      <span class="keywordtype">void</span> <a class="code" href="class_render_area.html#a67b7d2e03cd4a27ae18c1e6a8b94f79b">paintEvent</a>(QPaintEvent *event);
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058  <span class="keyword">private</span>:
+<a name="l00059"></a>00059      qreal m_level;
+<a name="l00060"></a>00060      QPixmap m_pixmap;
+<a name="l00061"></a>00061  };
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063  <span class="keyword">class </span><a class="code" href="class_input_test.html">InputTest</a> : <span class="keyword">public</span> QMainWindow
+<a name="l00064"></a>00064  {
+<a name="l00065"></a>00065      Q_OBJECT
+<a name="l00066"></a>00066  <span class="keyword">public</span>:
+<a name="l00067"></a>00067      <a class="code" href="class_input_test.html#a3c1bfbc68268854b529a1c35f40a2020">InputTest</a>();
+<a name="l00068"></a>00068      <a class="code" href="class_input_test.html#a9a7ea1c7f60c3a10aa6b888305e1114f">~InputTest</a>();
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070  <span class="keyword">private</span>:
+<a name="l00071"></a>00071      <span class="keywordtype">void</span> initializeWindow();
+<a name="l00072"></a>00072      <span class="keywordtype">void</span> initializeAudio();
+<a name="l00073"></a>00073      <span class="keywordtype">void</span> createAudioInput();
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075  <span class="keyword">private</span> slots:
+<a name="l00076"></a>00076      <span class="keywordtype">void</span> refreshDisplay();
+<a name="l00077"></a>00077      <span class="keywordtype">void</span> notified();
+<a name="l00078"></a>00078      <span class="keywordtype">void</span> readMore();
+<a name="l00079"></a>00079      <span class="keywordtype">void</span> toggleMode();
+<a name="l00080"></a>00080      <span class="keywordtype">void</span> toggleSuspend();
+<a name="l00081"></a>00081      <span class="keywordtype">void</span> stateChanged(QAudio::State state);
+<a name="l00082"></a>00082      <span class="keywordtype">void</span> deviceChanged(<span class="keywordtype">int</span> index);
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084  <span class="keyword">private</span>:
+<a name="l00085"></a>00085      <span class="comment">// Owned by layout</span>
+<a name="l00086"></a>00086      <a class="code" href="class_render_area.html">RenderArea</a> *m_canvas;
+<a name="l00087"></a>00087      QPushButton *m_modeButton;
+<a name="l00088"></a>00088      QPushButton *m_suspendResumeButton;
+<a name="l00089"></a>00089      QComboBox *m_deviceBox;
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091      QAudioDeviceInfo m_device;
+<a name="l00092"></a>00092      <a class="code" href="class_audio_info.html">AudioInfo</a> *m_audioInfo;
+<a name="l00093"></a>00093      QAudioFormat m_format;
+<a name="l00094"></a>00094      QAudioInput *m_audioInput;
+<a name="l00095"></a>00095      QIODevice *m_input;
+<a name="l00096"></a>00096      <span class="keywordtype">bool</span> m_pullMode;
+<a name="l00097"></a>00097      QByteArray m_buffer;
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099      <span class="keyword">static</span> <span class="keyword">const</span> QString PushModeLabel;
+<a name="l00100"></a>00100      <span class="keyword">static</span> <span class="keyword">const</span> QString PullModeLabel;
+<a name="l00101"></a>00101      <span class="keyword">static</span> <span class="keyword">const</span> QString SuspendLabel;
+<a name="l00102"></a>00102      <span class="keyword">static</span> <span class="keyword">const</span> QString ResumeLabel;
+<a name="l00103"></a>00103  };
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 <span class="preprocessor"> #endif</span>
+</pre></div></div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="audioinput_8hpp.html">audioinput.hpp</a>      </li>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+    <li class="footer">Ghost Playに対してMon Aug 29 2011 16:58:36に生成されました。
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.5 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

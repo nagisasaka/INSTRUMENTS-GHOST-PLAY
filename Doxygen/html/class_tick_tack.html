@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Ghost Play: クラス TickTack</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Ghost Play
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 作成： Doxygen 1.7.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="classes.html"><span>構成索引</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('class_tick_tack.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#signals">シグナル</a> &#124;
+<a href="#pub-static-methods">Static Public メソッド</a> &#124;
+<a href="#pro-methods">Protected メソッド</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス TickTack</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="TickTack" -->
+<p>システム全体の基幹タイマー  
+ <a href="class_tick_tack.html#details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="ticktack_8hpp_source.html">ticktack.hpp</a>&gt;</code></p>
+
+<p><a href="class_tick_tack-members.html">すべてのメンバ一覧</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="signals"></a>
+シグナル</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tick_tack.html#a8c97786e05c44ed5149e658cccea1356">GUIUpdate</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tick_tack.html#ab02649b25169c6f8e408af3c16ab07a5">ActuatorUpdate</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tick_tack.html#ac98e5aecb3e602c88c30af00a4f56bd2">SetEnable</a> (bool _enable)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">制御タイマーの有効化／無効化  <a href="#ac98e5aecb3e602c88c30af00a4f56bd2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tick_tack.html#a96ac64861104a5d9411e13d89966e742">isEnable</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tick_tack.html#a8f19ef8f4886d546041f1cc008a3c235">SetCycle</a> (int _cycle)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">制御サイクル（ミリ秒）を設定する．実行中の変更可．  <a href="#a8f19ef8f4886d546041f1cc008a3c235"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tick_tack.html#a60169357401c00badaac63b100e9da21">GetCycle</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tick_tack.html#a6c84faf65d4f6e5c87ed8ab4929d5ac3">run</a> ()</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>説明</h2>
+<div class="textblock"><p>システム全体の基幹タイマー </p>
+<dl class="remark"><dt><b>意見:</b></dt><dd>PCI7443ハードウェアタイマーに依存しています</dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="htimer_8hpp.html">htimer.hpp</a> </dd></dl>
+</div><hr/><h2>関数</h2>
+<a class="anchor" id="ab02649b25169c6f8e408af3c16ab07a5"></a><!-- doxytag: member="TickTack::ActuatorUpdate" ref="ab02649b25169c6f8e408af3c16ab07a5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TickTack::ActuatorUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a60169357401c00badaac63b100e9da21"></a><!-- doxytag: member="TickTack::GetCycle" ref="a60169357401c00badaac63b100e9da21" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int TickTack::GetCycle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c97786e05c44ed5149e658cccea1356"></a><!-- doxytag: member="TickTack::GUIUpdate" ref="a8c97786e05c44ed5149e658cccea1356" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TickTack::GUIUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96ac64861104a5d9411e13d89966e742"></a><!-- doxytag: member="TickTack::isEnable" ref="a96ac64861104a5d9411e13d89966e742" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool TickTack::isEnable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c84faf65d4f6e5c87ed8ab4929d5ac3"></a><!-- doxytag: member="TickTack::run" ref="a6c84faf65d4f6e5c87ed8ab4929d5ac3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TickTack::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f19ef8f4886d546041f1cc008a3c235"></a><!-- doxytag: member="TickTack::SetCycle" ref="a8f19ef8f4886d546041f1cc008a3c235" args="(int _cycle)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void TickTack::SetCycle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_cycle</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>制御サイクル（ミリ秒）を設定する．実行中の変更可． </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cycle</td><td>制御サイクル（ミリ秒） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac98e5aecb3e602c88c30af00a4f56bd2"></a><!-- doxytag: member="TickTack::SetEnable" ref="ac98e5aecb3e602c88c30af00a4f56bd2" args="(bool _enable)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void TickTack::SetEnable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_enable</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>制御タイマーの有効化／無効化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_enable</td><td>有効／無効の選択</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="remark"><dt><b>意見:</b></dt><dd>有効にした場合，別途start()する必要がある．無効にした場合は，次の制御サイクルでスレッドは勝手に終了する </dd></dl>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>C:/Documents and Settings/Administrator/My Documents/Visual Studio 2008/Projects/GhostCore/GhostCore/thread/<a class="el" href="ticktack_8hpp_source.html">ticktack.hpp</a></li>
+<li>C:/Documents and Settings/Administrator/My Documents/Visual Studio 2008/Projects/GhostCore/GhostCore/GeneratedFiles/Debug/<a class="el" href="_debug_2moc__ticktack_8cpp.html">moc_ticktack.cpp</a></li>
+<li>C:/Documents and Settings/Administrator/My Documents/Visual Studio 2008/Projects/GhostCore/GhostCore/GeneratedFiles/Release/<a class="el" href="_release_2moc__ticktack_8cpp.html">moc_ticktack.cpp</a></li>
+<li>C:/Documents and Settings/Administrator/My Documents/Visual Studio 2008/Projects/GhostCore/GhostCore/thread/<a class="el" href="ticktack_8cpp.html">ticktack.cpp</a></li>
+</ul>
+</div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="class_tick_tack.html">TickTack</a>      </li>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+    <li class="footer">Ghost Playに対してWed Aug 24 2011 15:19:19に生成されました。
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.5 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>
